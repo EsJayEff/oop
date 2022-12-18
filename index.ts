@@ -48,7 +48,7 @@ public get () {
 
 
 try{
-const userChoice=+prompt("Type 1 if you like to talk to others ans type 2 if you would rather keep to yourself: ");
+const userChoice=+prompt("Type 1 if you like to talk to others and type 2 if you would rather keep to yourself: ");
 const myPerson= new Person("");
 myPerson.askQuestion(userChoice);
 console.log(myPerson.getPersonality());

@@ -1,11 +1,6 @@
-#!usr/bin/env node
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const prompt_sync_1 = __importDefault(require("prompt-sync"));
-const prompt = (0, prompt_sync_1.default)();
+#! /usr/bin/env node
+import PromptSync from "prompt-sync";
+const prompt = PromptSync();
 class Person {
     personality;
     constructor(personality) {
@@ -39,7 +34,7 @@ class Student extends Person {
     }
 }
 try {
-    const userChoice = +prompt("Type 1 if you like to talk to others ans type 2 if you would rather keep to yourself: ");
+    const userChoice = +prompt("Type 1 if you like to talk to others and type 2 if you would rather keep to yourself: ");
     const myPerson = new Person("");
     myPerson.askQuestion(userChoice);
     console.log(myPerson.getPersonality());
