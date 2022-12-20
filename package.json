@@ -1,12 +1,10 @@
 {
   "name": "esjayoop",
-  "version": "1.3.0",
+  "version": "1.8.0",
   "description": "oop",
   "main": "index.js",
   "type": "module",
-  "bin": {
-    "esjayoop": "bin/index.js"
-  },
+  "bin": "./index.js",
   "dependencies": {
     "ansi-regex": "^4.1.1",
     "prompt-sync": "^4.2.0",

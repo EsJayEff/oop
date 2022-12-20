@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#! usr/bin/env node
 import PromptSync from "prompt-sync";
 const prompt=PromptSync();
 
